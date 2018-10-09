@@ -26,6 +26,8 @@
   ],
   "devDependencies": {
     "docz": "^0.12.5",
-    "docz-theme-default": "^0.12.5"
+    "docz-plugin-css": "^0.11.0",
+    "docz-theme-default": "^0.12.5",
+    "webpack-hot-client": "^4.1.1"
   }
 }
