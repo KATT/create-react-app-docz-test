@@ -8,4 +8,16 @@ export default {
       cssmodules: true,
     }),
   ],
+  modifyBabelRc: babelrc => ({
+    ...babelrc,
+    plugins: [
+      ...babelrc.plugins,
+      [
+        'module-resolver',
+        {
+          root: [process.env.NODE_PATH],
+        },
+      ],
+    ],
+  }),
 };
